@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<inherited ParentReport="..\..\rep_template.fr3" ReportOptions.LastChange="43981.5413823264" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.&#13;&#10;{&#13;&#10;**********Script from parent report**********&#13;&#10;function DisplayThaiDate(const ADate: TDateTime): String;&#13;&#10;var&#13;&#10;   yy,mm,dd: word;&#13;&#10;begin&#13;&#10;   decodedate(ADate, yy,mm,dd);&#13;&#10;   yy:= 543+yy;&#13;&#10;   Result := format('%s%d',[ formatdatetime('dd/mm/', ADate), yy]);&#13;&#10;end;&#13;&#10;&#13;&#10;function DisplayTimeStyle(const ADate: TDateTime): String;&#13;&#10;begin&#13;&#10;   Result:= FormatDateTime('hh:mm:ss', ADate);&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.&#13;&#10;}" StoreInDFM="False">
+  <inherited Name="Data"/>
+  <inherited Name="Page1" PaperSize="9">
+    <inherited Name="PageHeader1">
+      <inherited Name="Memo1" Text="REP_DEMO001"/>
+      <inherited Name="Memo2" Text="รายงาน Demo 1"/>
+      <inherited Name="Memo10"/>
+      <inherited Name="Memo11"/>
+      <inherited Name="Line1"/>
+      <TfrxMemoView Name="Memo3" Left="4" Top="68" Width="80" Height="16" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Hello world..."/>
+    </inherited>
+    <inherited Name="PageFooter1">
+      <inherited Name="Memo_Date">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </inherited>
+    </inherited>
+  </inherited>
+</inherited>
